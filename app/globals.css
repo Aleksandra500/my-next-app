@@ -1,27 +1,35 @@
-@import "tailwindcss";
+
+@import 'tailwindcss';
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; 
+  --foreground: #333333; 
 }
 
-:root {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-size: larger;
 }
-@import 'tailwindcss';
+
+
+main {
+  padding: 2rem;
+}
+
+
+a {
+  color: #1d4ed8; /* plava, po Tailwind standardu */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
