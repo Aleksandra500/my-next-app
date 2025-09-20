@@ -2,9 +2,7 @@ import React from "react";
 import Clock from "@/app/components/Clock";
 
 async function getUser() {
-  const res = await fetch("http://localhost:3000/api/newusers", {
-    cache: "no-store", 
-  });
+  const res = await fetch("http://localhost:3000/api/newusers");
   return res.json();
 }
 
